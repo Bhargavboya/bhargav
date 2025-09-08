@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mini JS Project</title>
+    <style>
+      body { font-family: Arial, sans-serif; padding: 20px; }
+      .box { margin: 10px 0; padding: 10px; border: 1px solid #ddd; }
+      #numbers { white-space: pre-line; }
+      .hidden { display: none; }
+      button { padding: 6px 10px; margin-right: 6px; }
+    </style>
+  </head>
+  <body>
+    <h1 id="mainTitle">Welcome!</h1>
+
+    <div class="box">
+      <label>Your name: <input id="nameInput" placeholder="Type your name" /></label>
+      <button id="greetBtn">Greet</button>
+      <button id="bgBtn">Change Background</button>
+    </div>
+
+    <div class="box">
+      <label>Show numbers up to: <input id="numInput" type="number" min="1" /></label>
+      <button id="showNumsBtn">Show Numbers</button>
+      <button id="hideNumsBtn">Hide Numbers</button>
+      <div id="numbers" class="hidden"></div>
+    </div>
+
+    <div class="box">
+      <button id="toggleMsgBtn">Show Fun Message</button>
+      <p id="funMsg" class="hidden">You are learning JavaScript — great job! 🎉</p>
+    </div>
+
+    <!-- external script -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
