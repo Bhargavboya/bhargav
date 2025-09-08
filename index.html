@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Module 5 — Demo</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>CSS Module 5 — Demo</h1>
+    <nav class="nav">
+      <a href="#flex">Flex</a>
+      <a href="#grid">Grid</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>What is CSS?</h2>
+      <p>CSS styles HTML: colors, layout, spacing and responsive behavior. This demo shows many common features.</p>
+      <div class="hero">
+        <img src="https://picsum.photos/900/260" alt="scenic photo">
+        <p class="caption">Image uses <code>max-width:100%</code> so it's responsive.</p>
+      </div>
+    </section>
+
+    <section id="flex" class="demo-section">
+      <h2>Flexbox example</h2>
+      <div class="cards">
+        <div class="card">Card A</div>
+        <div class="card">Card B</div>
+        <div class="card">Card C</div>
+      </div>
+    </section>
+
+    <section id="grid" class="demo-section">
+      <h2>Grid example</h2>
+      <div class="grid-demo">
+        <div class="g1">1</div>
+        <div class="g2">2</div>
+        <div class="g3">3</div>
+        <div class="g4">4</div>
+      </div>
+    </section>
+
+    <section id="contact" class="demo-section">
+      <h2>Contact (simple form)</h2>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> CSS Module 5 — Demo</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
